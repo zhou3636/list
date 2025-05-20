@@ -1,6 +1,6 @@
 {
     "scripts": {
       "gen:mdlist": "node scripts/genMdList.js",
-      "build": "pnpm run build"
+      "build": "pnpm run gen:mdlist"
     }
   }

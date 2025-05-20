@@ -10,7 +10,7 @@
     <div id="list"></div>
   </div>
   <script>
-    fetch('/api/md-list').then(res => res.json()).then(list => {
+    fetch('md/mdlist.json').then(res => res.json()).then(list => {
       const c = document.getElementById('list');
       list.forEach(item => {
         const div = document.createElement('div');

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>文件列表</title>
+  <link rel="stylesheet" href="34.css">
+</head>
+<body>
+  <div class="container">
+    <div id="list"></div>
+  </div>
+  <script>
+    fetch('md/mdlist.json').then(res => res.json()).then(list => {
+      const c = document.getElementById('list');
+      list.forEach(item => {
+        const div = document.createElement('div');
+        div.className = 'item';
+        div.innerHTML = `
+          <div class="title"><a href="view.html?file=${encodeURIComponent(item.file)}" target="_blank">${item.title}</a></div>
+          <div class="desc">${item.desc || ''}</div>
+        `;
+        c.appendChild(div);
+      });
+    });
+  </script>
+</body>
+</html>

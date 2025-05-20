@@ -1,0 +1,160 @@
+/* 这个文件里面放4个页面公共的一些样式，比如背景、导航栏等 */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    /* 和父元素的一样高，body 的父亲是 html，html 的父亲是浏览器窗口 */
+    height: 100%;
+    /* 页面背景 */
+    background-color: #d1f4ff;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+} 
+a:visited {
+    color: rgb(0, 0, 0);
+}
+/* 导航栏 */
+.nav {
+    width: 100%;
+    height: 50px;
+    background-color: #3471c0;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.nav .title a {
+    color: rgb(255, 255, 255);
+}
+.nav .title a:hover{
+    color: rgb(5, 0, 26);
+}    
+/* 导航栏中的 log */
+.nav img {
+    width: 40px;
+    height: 40px;
+    margin-left: 15px;
+    margin-right: 5px;
+    border-radius: 50%;
+    border: 1px solid #000000;
+}
+
+/* 导航栏中的标题 */
+.nav .title {
+    width: 130px;
+    font-size: 20px;
+}
+/* 导航栏中的占位符 */
+.nav .spacer {
+    display: none;
+    height: 40px;
+    width: calc(100% - 250px);
+}
+/* 导航栏中的链接 */
+.nav a {
+    width: 60px;
+    text-decoration: none;
+    cursor:default
+}
+.ctrap {
+    display: none;
+}
+/* 版心的样式 */
+.container {
+    width: 100%;
+    height: calc(100% - 55px);
+    margin: 0 auto;
+    /* 为了让版心里面的子元素能够以左右布局的方式显示，使用 flex 布局 */
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+/* 左侧区域样式 */
+.container .container-left {
+    height: 100%;
+    width: 200px;
+}
+
+/* 右侧区域样式 */
+.container .container-right {
+    height: 100%;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* 用户信息卡片，也会在多个页面中用到 */
+.card {
+    border-radius: 8px;
+    padding: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+/* 鼠标悬停时的效果 */
+
+.card a:link {
+    color: #000000;
+}
+/* 用户头像 */
+.card img {
+    width: 140px;
+    height: 140px;
+    border-radius: 8px;
+    border: 3px solid rgba(0, 182, 24, 0.1);
+}
+.card img:hover{
+    border: 4px solid rgba(0, 182, 24, 0.2);
+}
+/* 用户名 */
+.card h3 {
+    text-align: center;
+}
+/* 其它信息 */
+.card a {
+    /* a 标签是行内元素，设置尺寸、边距都可能失效，要转成块级元素 */
+    /* display: block; */
+    text-decoration: none;
+    text-align: center;
+    /* padding-top: 5px; */
+    cursor:default
+}
+.card .aaa {
+    width: 100%;
+    height: 35px;
+    text-align: center;
+    line-height: 32px;
+    border-radius: 8px;
+    background-color: #ffeef7;
+    border: 1px solid #9b9b9b;
+}
+.card .aaa:hover {
+    font-size: 18px; /* 悬停时字体变大 */
+}
+.card .aaa:hover {
+    background-color: #ec5aff;
+    cursor: default;
+    border-radius: 8px;
+}
+.card .aa {
+    width: 100%;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+    font-size: 16px;
+
+}
+.card .aa:hover {
+    font-size: 17px; /* 悬停时字体变大 */
+}
+.card .aa:hover {
+    background-color: rgba(0, 0, 0, 0.08);
+    cursor: default;
+    border-radius: 8px;
+}
+.aa1 {
+    text-align: center;
+}

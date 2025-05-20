@@ -1,27 +1,61 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Markdown 文件列表</title>
-  <link rel="stylesheet" href="34.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>食不食油饼</title>
+    <!-- <base target="_blank"> -->
+    <link rel="stylesheet" media="screen and (min-width: 500px)" href="css/c1.css">
+    <link rel="stylesheet" media="screen and (max-width: 499px)" href="css/c2.css">
+    <link rel="stylesheet" href="j/jj.css">
+
 </head>
 <body>
-  <div class="container">
-    <div id="list"></div>
-  </div>
-  <script>
-    fetch('md/mdlist.json').then(res => res.json()).then(list => {
-      const c = document.getElementById('list');
-      list.forEach(item => {
-        const div = document.createElement('div');
-        div.className = 'item';
-        div.innerHTML = `
-          <div class="title"><a href="view.html?file=${encodeURIComponent(item.file)}" target="_blank">${item.title}</a></div>
-          <div class="desc">${item.desc || ''}</div>
-        `;
-        c.appendChild(div);
-      });
-    });
-  </script>
+    <!-- 导航栏 -->
+    <div class="nav">
+        <img src="image/head.jpg" alt="">
+        <div class="title"><h3><a href="/" target="_self">ikun主页</a></h3></div>
+        <div class="spacer"></div>
+        <a href="javascript:void(0)" class="playBtn"><div class="ctrap"><p>点鸡唱跳Rap</p></div></a>
+    </div>
+    <!-- 版心 -->
+    <div class="container">
+        <!-- 左侧区域，显示用户信息 -->
+        <div class="container-left">
+            <!-- 用户详情 -->
+            <div class="card">
+                <!-- 用户的头像 -->
+                <img src="image/kk.jpg" alt="">
+                <!-- 用户名 -->
+                <div class="aaa"><a href="javascript:void(0)" class="playBtn"><h3>点鸡唱跳Rap</h3></a></div>
+                     <!-- 弹窗内容 -->
+                
+                <!-- 其它信息 -->
+                <div class="aa"><a href="https://www.bilibili.com/" target="_blank">Bilibili</a></div>
+                <div class="aa"><a href="https://www.bing.com/" target="_blank">必应搜索</a></div>
+                <div class="aa"><a href="https://www.baidu.com/" target="_blank">百度搜索</a></div>
+                <div class="aa"><a href="https://www.cloudflare.com/" target="_blank">Cloudflare</a></div>
+                <div class="aa"><a href="https://www.github.com/" target="_blank">GitHub</a></div>
+                <div class="aa"><a href="https://www.bing.com/translator/" target="_blank">微软翻译</a></div>   
+            </div>
+        </div>
+     <!-- 中间区域，显示博客列表 -->
+        <div class="container-right">
+            <iframe src="https://ls.855955.xyz" width="100%" height="100%" frameborder="0">
+                您的浏览器不支持iframe，请升级
+            </iframe>
+        </div>
+    </div>
+    <!-- 弹出视频 -->
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal-content">
+          <button class="close-btn" id="closeBtn">&times;</button>
+          <video id="popupVideo" class="modal-video" controls>
+            <source src="https://al.855955.xyz/d/123/rr/jkkk.mp4?sign=26sDTCHIq_6S76NktyU3hWc5sfRHmEfwEPtjAMkB31M=:0" type="video/mp4">
+            您的浏览器不支持 video 标签。
+          </video>
+        </div>
+      </div>
+      <script src="j/jj.js"></script>
 </body>
 </html>

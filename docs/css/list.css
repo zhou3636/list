@@ -1,0 +1,57 @@
+
+/* 这个文件里面放4个页面公共的一些样式，比如背景、导航栏等 */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* 设置链接的颜色 */
+a:link {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    cursor:default
+    }  
+a:visited {
+    color: black;
+}
+a:hover{
+    color: rgb(0, 2, 112);
+}    
+/* 这个 CSS 专门针对博客列表页来设置样式 */
+
+.blog {
+    width: 100%;
+    padding: 5px 10px;
+    /* border-radius: 8px; */
+    border-bottom: 1px solid #eee;
+    
+}
+/* 设置鼠标悬停时div的颜色 */
+.blog:hover {
+    background-color: #eee;
+    border-bottom: 1px solid #aaa;
+}
+/* 博客的标题 */
+.blog .title {
+    text-align: left;
+    font-size: 17px;
+    font-weight: 700;
+    padding-top: 7px;
+    padding-bottom: 5px;
+}
+
+/* 博客的日期 */
+.blog .date {
+    text-align: left;
+    font-size: 14px;
+    padding-bottom: 5px;
+    color: grey;
+}
+
+/* 博客的描述 */
+
+/* 查看博客详情的按钮 */
+
+
+/* 实现鼠标悬停在按钮上时有一个背景色切换的效果 */

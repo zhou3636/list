@@ -19,8 +19,10 @@
       fetch('/md/' + encodeURIComponent(file))
         .then(r => r.text())
         .then(md => {
-          md = md.replace(/!\[([^\]]*)\]\((?!https?:\/\/)([^)]+)\)/g, '![$1](/md/$2)');
-          document.getElementById('content').innerHTML = marked.parse(md);
+          const lines = md.split('\n');
+          const body = lines.slice(2).join('\n');
+          const bodyFixed = body.replace(/!\[([^\]]*)\]\((?!https?:\/\/)([^)]+)\)/g, '![$1](/md/$2)');
+          document.getElementById('content').innerHTML = marked.parse(bodyFixed);
         });
     }
   </script>

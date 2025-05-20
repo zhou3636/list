@@ -1,0 +1,10 @@
+{
+    "name": "docs",
+    "version": "1.0.0",
+    "scripts": {
+      "gen:mdlist": "node scripts/genMdList.js",
+      "build": "pnpm gen:mdlist && vite build"
+    },
+    "devDependencies": {
+    }
+  }

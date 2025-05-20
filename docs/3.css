@@ -1,0 +1,42 @@
+body {
+    font-family: "Segoe UI", "PingFang SC", Arial, sans-serif;
+    background: #f7f9fb;
+    margin: 0;
+  }
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 16px #e0e4ea;
+    padding: 3px  10px ;
+  }
+  .item {
+    margin: 10px 0 6px 0;
+    border-bottom: 1px solid #e7ebf0;
+    padding-bottom: 4px;
+    transition: background 0.2s;
+  }
+  .item:last-child {
+    border-bottom: none;
+  }
+  .title {
+    font-weight: bold;
+    font-size: 1.1em;
+    color: rgb(20, 20, 38);
+    margin-bottom: 3px;
+    transition: color 0.2s;
+  }
+  .title a {
+    text-decoration: none;
+    color: inherit;
+  }
+  .title a:hover {
+    color: #2463a2;
+  }
+  .desc {
+    color: #2b3139;
+    font-size: 0.95em;
+    /* margin-left: 4px; */
+    margin-bottom: 2px;
+}

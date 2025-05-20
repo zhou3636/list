@@ -16,7 +16,7 @@
     const params = new URLSearchParams(location.search);
     const file = params.get('file');
     if (file) {
-      fetch('/api/md/' + encodeURIComponent(file))
+      fetch('/md/' + encodeURIComponent(file))
         .then(r => r.text())
         .then(md => {
           md = md.replace(/!\[([^\]]*)\]\((?!https?:\/\/)([^)]+)\)/g, '![$1](/md/$2)');

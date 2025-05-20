@@ -1,6 +1,6 @@
 body {
     font-family: "Segoe UI", "PingFang SC", Arial, sans-serif;
-    background: #b4d9fe;
+    background: #a3dcbb;
     margin: 0;
   }
   .container {
@@ -36,7 +36,7 @@ body {
     color: #2463a2;
   }
   .desc {
-    color: #2b3139;
+    color: #111419;
     font-size: 0.95em;
     /* margin-left: 4px; */
     margin-bottom: 2px;

@@ -1,0 +1,21 @@
+body {
+    margin: 20px;
+}
+
+.markdown-body {
+    box-shadow: 0 0 12px #eee;
+    padding: 24px;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 499px) {
+    body {
+        margin: 0px;
+    }
+
+    .markdown-body {
+        box-shadow: 0 0 12px #eee;
+        padding: 10px;
+        border-radius: 0px;
+    }
+}

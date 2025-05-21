@@ -5,14 +5,13 @@
 }
 body {
     font-family: "Segoe UI", "PingFang SC", Arial, sans-serif;
-    background: #f6f8fa;
     margin: 0;
   }
   .container {
     /* max-width: 600px; */
     width: 100%;
     margin: 0 auto;
-    background: #fff;
+    /* background: rgba(255, 255, 255, 0.7); */
     border-radius: 8px;
     box-shadow: 0 2px 16px #e0e4ea;
     padding: 3px  10px ;

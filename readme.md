@@ -1,2 +1,1 @@
-list
 npm run build

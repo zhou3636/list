@@ -18,7 +18,7 @@ body {
   }
   .item {
     margin: 10px 0 6px 0;
-    border-bottom: 1px solid #e7ebf0;
+    border-bottom: 1px solid #94969a;
     padding-bottom: 5px;
     transition: background 0.2s;
     cursor: default;

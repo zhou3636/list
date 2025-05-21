@@ -1,5 +1,5 @@
-XUI
-########
+X-UI
+支持xray多种协议的面板
 ### X-UI搭建  
 FinalShell SSH工具 [下载](https://www.hostbuf.com/t/988.html)  
 系统Ubuntu/Debian  

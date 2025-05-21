@@ -24,12 +24,13 @@ a:visited {
     max-width: 960px;
     margin: 5px auto;
     height: 70px;
-    background-color: rgba(98, 149, 215, 0.7);
+    background-color: rgba(98, 149, 215, 0.5);
     display: flex;
     justify-content: start;
     align-items: center;
     border-radius: 15px;
     box-shadow: 0 0 3px #3471c0;
+    backdrop-filter: blur(3px);
 
 }
 .nav .title a {
@@ -93,13 +94,12 @@ a:visited {
 .container .container-right {
     height: 1080px;
     width: 100%;
-    background-color: rgba(239, 255, 255, 0.55);
+    background-color: rgba(239, 250, 255, 0.4);
     border-radius: 15px;
     overflow: hidden;
     border: 1px solid rgba(0, 0, 0, 0.15);
-    box-shadow: 0 0 5px #1f526b;
-
-
+    box-shadow: 0 0 5px #43698e;
+    backdrop-filter: blur(3px);
 }
 
 /* 用户信息卡片，也会在多个页面中用到 */
@@ -107,8 +107,9 @@ a:visited {
     border-radius: 15px;
     padding: 25px;
     border: 1px solid rgba(0, 0, 0, 0.15);
-    background-color: rgba(239, 250, 255, 0.5);
-    box-shadow: 0 0 5px #1f526b;
+    background-color: rgba(239, 250, 255, 0.4);
+    box-shadow: 0 0 5px #43698e;
+    backdrop-filter: blur(3px);
 
 }
 /* 鼠标悬停时的效果 */
@@ -143,7 +144,7 @@ a:visited {
     text-align: center;
     line-height: 32px;
     border-radius: 8px;
-    background-color: #b1c8d7;
+    background-color: #b1c8d779;
     border: 1px solid #818181;
 }
 .card .aaa:hover {
@@ -157,9 +158,10 @@ a:visited {
 .card2 {
     border-radius: 15px;
     padding: 10px 35px;
-    border: 1px solid rgba(0, 0, 0, 0.3);
-    background-color: rgba(239, 250, 255, 0.5);
-    box-shadow: 0 0 5px #1f526b;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    background-color: rgba(239, 250, 255, 0.4);
+    box-shadow: 0 0 5px #43698e;
+    backdrop-filter: blur(3px);
 }
 .card2 .aa {
     width: 100%;
@@ -172,6 +174,6 @@ a:visited {
 }
 .card2 .aa:hover {
     font-size: 19px; 
-    background-color: rgba(12, 58, 100, 0.2);
+    background: rgba(17, 96, 125, 0.1);
     cursor: default;
 }

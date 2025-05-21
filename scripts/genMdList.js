@@ -4,14 +4,31 @@ const path = require('path');
 const mdDir = path.join(__dirname, '../docs/md');
 const outFile = path.join(mdDir, 'mdlist.json');
 
-const files = fs.readdirSync(mdDir).filter(f => f.endsWith('.md'));
+function findMdFiles(dir) {
+  let mdFiles = [];
+  const files = fs.readdirSync(dir);
+  files.forEach(f => {
+    const fullPath = path.join(dir, f);
+    const stat = fs.statSync(fullPath);
+    if (stat.isDirectory()) {
+      mdFiles = mdFiles.concat(findMdFiles(fullPath));
+    } else if (f.endsWith('.md')) {
+      mdFiles.push(fullPath);
+    }
+  });
+  return mdFiles;
+}
 
-const list = files.map(file => {
-  const content = fs.readFileSync(path.join(mdDir, file), 'utf8');
+const files = findMdFiles(mdDir);
+
+const list = files.map(filePath => {
+  const content = fs.readFileSync(filePath, 'utf8');
   const lines = content.split('\n');
-  let title = file, desc = '';
-  if (lines[0]?.startsWith('/')) title = lines[0].substring(1).trim();
-  if (lines[1]?.startsWith('/')) desc = lines[1].substring(1).trim();
+  let title = path.basename(filePath), desc = '';
+  if (lines[0]) title = lines[0].trim();
+  if (lines[1]) desc = lines[1].trim();
+  // 文件路径相对于 mdDir
+  const file = path.relative(mdDir, filePath).replace(/\\/g, '/');
   return { file, title, desc };
 });
 

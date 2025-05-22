@@ -116,6 +116,7 @@ a:visited {
 .card {
     border-radius: 5px;
     padding: 25px;
+    padding-bottom: 12px;
     border: 1px solid rgba(0, 0, 0, 0.15);
     background-color: rgba(239, 250, 255, 0.6);
     box-shadow: 0 0 5px #43698e;
@@ -130,7 +131,7 @@ a:visited {
 .card img {
     width: 170px;
     height: 150px;
-    border-radius: 15px;
+    border-radius: 8px;
     border: 3px solid rgba(0, 106, 182, 0.1);
 }
 .card img:hover{
@@ -149,7 +150,8 @@ a:visited {
 
 }
 .card .aaa {
-    width: 100%;
+    margin: 8px auto;
+    width: 150px;
     height: 35px;
     text-align: center;
     line-height: 32px;

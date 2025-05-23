@@ -92,11 +92,19 @@ a:visited {
     box-shadow: 0 0 3px #d2dde9;
 }
 .container-card {
-    /* height: 160%; */
     width: 280px;
     display: flex;
     flex-direction: column;
     gap: 10px;
+    position: sticky;
+    top: 0; 
+    /* align-self: flex-start;  */
+}
+.container-card .card p{
+    background: rgba(59, 111, 153, 0.2);
+    border-radius: 8px;
+    padding: 5px;
+    margin-top: 5px;
 }
 .container-list {
     width: 100%;

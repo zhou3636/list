@@ -90,7 +90,6 @@ a:visited {
     cursor: default;
     background: rgba(255, 251, 251, 0.5);
     box-shadow: 0 0 3px #d2dde9;
-    padding-left: 5px;
 }
 .container-card {
     /* height: 160%; */

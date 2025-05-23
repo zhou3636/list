@@ -48,8 +48,6 @@ a {
 /* 导航栏中的占位符 */
 .nav .spacer {
     display: none;
-    /* height: 40px; */
-    /* width: calc(100% - 260px); */
 }
 .ctrap {
     width: 70px;

@@ -4,11 +4,11 @@
   box-sizing: border-box;
 }
 
-body {
+.item {
   font-family: "Segoe UI", "PingFang SC", Arial, sans-serif;
   margin: 0;
 }
-a {
+.item a {
   text-decoration: none;
 }
 .item {
